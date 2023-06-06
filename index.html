@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculator</h1>
+    <div class="calculator">
+      <input type="text" id="expression" style="width: 500px; padding: 10px; font-weight: 800; font-size: large;">
+      <div class="buttons">
+        <div class="row">
+          <div class="col"><button class="btn btn-secondary" onclick="handleButtonClick('7')">7</button></div>
+          <div class="col"><button class="btn btn-secondary" onclick="handleButtonClick('8')">8</button></div>
+          <div class="col"><button class="btn btn-secondary" onclick="handleButtonClick('9')">9</button></div>
+          <div class="col"><button class="btn btn-primary" onclick="handleButtonClick('/')">/</button></div>
+        </div>
+        <div class="row">
+          <div class="col"><button class="btn btn-secondary" onclick="handleButtonClick('4')">4</button></div>
+          <div class="col"><button class="btn btn-secondary" onclick="handleButtonClick('5')">5</button></div>
+          <div class="col"><button class="btn btn-secondary" onclick="handleButtonClick('6')">6</button></div>
+          <div class="col"><button class="btn btn-primary" onclick="handleButtonClick('*')">*</button></div>
+        </div>
+        <div class="row">
+          <div class="col"><button class="btn btn-secondary" onclick="handleButtonClick('1')">1</button></div>
+          <div class="col"><button class="btn btn-secondary" onclick="handleButtonClick('2')">2</button></div>
+          <div class="col"><button class="btn btn-secondary" onclick="handleButtonClick('3')">3</button></div>
+          <div class="col"><button class="btn btn-primary" onclick="handleButtonClick('-')">-</button></div>
+        </div>
+        <div class="row">
+          <div class="col"><button class="btn btn-secondary" onclick="handleButtonClick('0')">0</button></div>
+          <div class="col"><button class="btn btn-secondary" onclick="handleButtonClick('.')">.</button></div>
+          <div class="col"><button class="btn btn-primary" onclick="handleButtonClick('+')">+</button></div>
+          <div class="col"><button class="btn btn-success" onclick="calculate()">=</button></div>
+        </div>
+        <div class="row">
+          <div class="col"><button class="btn btn-danger" onclick="deleteLastNumber()">Delete</button></div>
+          <div class="col"><button class="btn btn-danger" onclick="clearExpression()">Clear</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+  ></script>
+    
+
+
+
+
+  <script src="script.js"></script>
+ 
+</body>
+</html>
